@@ -12,6 +12,7 @@ $js = (ENVIRONMENT === 'development') ? '.js' : '.min.js';
     <head>
         <title><?= $title ?></title>
         <link href="<?= $assetPath . '/assets/css/tailwind.min.css'?>" rel="stylesheet"/>
+        <link href="<?= $assetPath . '/assets/css/style.css'?>" rel="stylesheet"/>
         <style>
             .rot90 {
                 transform: rotate(90deg) !important;

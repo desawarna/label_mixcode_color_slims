@@ -19,6 +19,7 @@ ob_start();
     <head>
         <title><?= $title ?></title>
         <link href="<?= $assetPath . '/assets/css/tailwind.min.css'?>" rel="stylesheet"/>
+        <link href="<?= $assetPath . '/assets/css/style.css'?>" rel="stylesheet"/>
         <style>
 
             .rot90 {
@@ -76,7 +77,7 @@ ob_start();
                             </div>
                             <div class="inline-block" style="width: {$responsiveWidth}em ;height: {$settingsTemplate['heightBox']}em; border-left: 1px solid black; border-right: 1px solid black">
                                 <span class="w-full block text-center text-sm" style="border-bottom: 1px solid black; background-color:{$color}">{$sysconf['library_name']}</span>
-                                <span class="w-full block text-center text-md mt-8 font-bold {$settingsTemplate['callNumberFontSize']}"> {$callNumber}</span>
+                                <span class="callnumb w-full block text-left text-md mt-8 font-bold {$settingsTemplate['callNumberFontSize']}"> {$callNumber}</span>
                             </div>
                             <div class="inline-block float-right mr-2" style="width: 75px;">
                                 <small class="pl-2 pt-1">{$titleSlice} ...</small>
